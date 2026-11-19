@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <!-- Expérience de l'étape 9 : cette ligne dit au téléphone « utilise ta vraie largeur d'écran ».
+       Supprimez-la, observez la page dans le mode appareil de F12, puis remettez-la. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le marché du samedi — Produits frais de la vallée</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE : logo + nom du site, puis le menu ===== -->
+  <header class="entete">
+    <!-- Le logo et le nom forment un seul lien vers l'accueil : l'image est donc décorative (alt="") -->
+    <a class="marque" href="index.html">
+      <img src="images/logo.svg" alt="" width="60" height="60">
+      <span>Le marché du samedi</span>
+    </a>
+
+    <nav aria-label="Menu principal">
+      <ul class="menu">
+        <li><a href="#programme">Programme</a></li>
+        <li><a href="#infos">Infos pratiques</a></li>
+        <li><a href="#venir">Venir au marché</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== ACCUEIL : photo + présentation ===== -->
+    <section class="accueil">
+      <!-- Photo en WebP avec secours JPG (revoir l'exercice HTML 13) -->
+      <picture>
+        <source type="image/webp"
+                srcset="images/parcelle-800.webp 800w, images/parcelle-1600.webp 1600w"
+                sizes="(min-width: 900px) 600px, 100vw">
+        <img src="images/parcelle-800.jpg"
+             srcset="images/parcelle-800.jpg 800w, images/parcelle-1600.jpg 1600w"
+             sizes="(min-width: 900px) 600px, 100vw"
+             alt="Champ cultivé en rangs sous le soleil, avec une ferme au loin"
+             width="800" height="533">
+      </picture>
+
+      <div class="accueil-texte">
+        <h1>Le marché du samedi</h1>
+        <p>
+          Chaque samedi matin, une vingtaine de producteurs de la vallée vendent
+          directement leurs récoltes : pas d'intermédiaire, des prix justes
+          et des produits cueillis la veille.
+        </p>
+        <a class="bouton" href="#venir">Comment venir ?</a>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMME : 6 cartes ===== -->
+    <section id="programme">
+      <h2>Au programme ce samedi</h2>
+
+      <div class="cartes">
+        <article class="carte">
+          <img src="images/mangue.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Fruits de saison</h3>
+          <p>Mangues, papayes et ananas cueillis à maturité.</p>
+        </article>
+
+        <article class="carte">
+          <img src="images/tomate.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Légumes du potager</h3>
+          <p>Tomates, gombos et aubergines des jardins voisins.</p>
+        </article>
+
+        <article class="carte">
+          <img src="images/mais.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Céréales et farines</h3>
+          <p>Maïs, mil et farines moulues sur place.</p>
+        </article>
+
+        <article class="carte">
+          <img src="images/piment.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Épices et piments</h3>
+          <p>Piment frais ou séché, gingembre, poivre de Guinée.</p>
+        </article>
+
+        <article class="carte">
+          <img src="images/cacao.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Du cacao au chocolat</h3>
+          <p>Démonstration : de la cabosse à la tablette, à 10 h.</p>
+        </article>
+
+        <article class="carte">
+          <img src="images/riz.svg" alt="" width="400" height="300" loading="lazy">
+          <h3>Riz de la vallée</h3>
+          <p>Riz paddy et riz décortiqué, vendu au kilo.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== INFOS PRATIQUES : 3 blocs ===== -->
+    <section id="infos">
+      <h2>Infos pratiques</h2>
+
+      <div class="infos">
+        <div class="info">
+          <h3>Horaires</h3>
+          <p>Tous les samedis, de 7 h à 13 h, même pendant la saison des pluies.</p>
+        </div>
+        <div class="info" id="venir">
+          <h3>Lieu</h3>
+          <p>Place du marché, à côté de l'école. Parking vélos et motos gratuit.</p>
+        </div>
+        <div class="info">
+          <h3>Paiement</h3>
+          <p>Espèces et paiement mobile acceptés sur tous les stands.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="pied" id="contact">
+    <p>Contact : <a href="mailto:marche@example.com">marche@example.com</a></p>
+    <p>© 2026 Le marché du samedi — Exercice DFS</p>
+  </footer>
+
+</body>
+</html>

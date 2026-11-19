@@ -1,0 +1,160 @@
+/* =========================================================
+   Le journal de la ferme-école — mise en page complète
+   Exercice 08 : mettre en page un site entier avec Grid
+   Aucune classe : les balises sémantiques servent de sélecteurs.
+   ========================================================= */
+
+/* ===== VARIABLES : la charte graphique ===== */
+:root {
+  --vert: #2e7d32;
+  --vert-fonce: #1b5e20;
+  --vert-clair: #e8f5e9;
+  --soleil: #f9a825;
+  --terre: #6d4c41;
+  --creme: #fffaf0;
+  --blanc: #ffffff;
+  --texte: #1f2a1f;
+  --rayon: 0.75rem;
+  --ombre: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* ===== LA GRILLE DE LA PAGE ===== */
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background-color: var(--creme);
+
+  /* TODO 2 : une grille de 2 colonnes (le reste | 18rem), le « plan » de la page
+              avec grid-template-areas, et un espace de 1.5rem entre les zones */
+
+  /* TODO 3 : le pied de page toujours en bas (rangées + hauteur minimale) */
+
+  /* TODO 4 : une page centrée, de 70rem maximum, avec 1rem de marge intérieure à gauche et à droite */
+
+}
+
+/* TODO 1 : donner un nom de zone (grid-area) à header, nav, main, aside et footer */
+
+
+/* ===== EN-TÊTE (décor fourni) ===== */
+header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: var(--rayon);
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+}
+
+header h1 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 0;
+}
+
+/* ===== MENU ===== */
+/* TODO 5 : rappel de l'exercice 05 — une liste sans puces ni marges,
+            des liens côte à côte qui passent à la ligne, espacés de 0.5rem */
+nav ul {
+
+}
+
+nav a {
+  display: block;
+  padding: 0.4rem 1rem;
+  border-radius: 999px;
+  font-weight: bold;
+  color: var(--vert-fonce);
+  background-color: var(--vert-clair);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--blanc);
+  background-color: var(--vert);
+}
+
+nav a:focus-visible {
+  outline: 3px solid var(--vert-fonce);
+  outline-offset: 2px;
+}
+
+/* ===== ARTICLES (décor fourni) ===== */
+/* Une petite grille d'une seule colonne : juste pour espacer les articles avec gap */
+main {
+  display: grid;
+  gap: 1.5rem;
+  align-content: start;
+}
+
+article {
+  padding: 1.5rem;
+  border-radius: var(--rayon);
+  background-color: var(--blanc);
+  box-shadow: var(--ombre);
+}
+
+article h2 {
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+  color: var(--vert-fonce);
+}
+
+time {
+  font-weight: bold;
+  color: var(--terre);
+}
+
+article img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+/* ===== ENCADRÉ ===== */
+aside {
+  padding: 1rem 1.5rem;
+  border-left: 6px solid var(--soleil);
+  border-radius: var(--rayon);
+  background-color: var(--blanc);
+  box-shadow: var(--ombre);
+  /* TODO 6 : l'encadré reste visible (« collé » à 1rem du haut) quand on fait défiler la page */
+
+}
+
+aside h2 {
+  font-size: 1.2rem;
+  color: var(--vert-fonce);
+}
+
+aside ul {
+  padding-left: 1.2rem;
+}
+
+/* ===== PIED DE PAGE ===== */
+footer {
+  margin-bottom: 1rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: var(--rayon);
+  text-align: center;
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+}
+
+/* ===== ÉCRANS ÉTROITS ===== */
+/* TODO 7 : en dessous de 700px de large, une seule colonne (redessinez le plan !) */
+

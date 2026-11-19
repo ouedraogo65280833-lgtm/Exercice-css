@@ -1,0 +1,45 @@
+/* =====================================================
+   Le carnet de recettes — feuille de style
+   Les numéros des TODO correspondent aux étapes du README.
+   ===================================================== */
+
+/* TODO 1 : déclarez ici les couleurs et les polices de la charte graphique (variables) */
+:root {
+
+}
+
+/* TODO 2 : fond, couleur du texte, police du texte et interligne de toute la page */
+body {
+
+}
+
+/* TODO 3 : police et couleur des grands titres (h1 et h2) */
+
+
+/* TODO 4 : tailles des titres en rem (h1, h2, h3) */
+
+
+/* TODO 5 : les intertitres h3 (Ingrédients, Préparation) : majuscules, espacés, couleur d'accent */
+
+
+/* TODO 6 : la ligne d'informations .infos */
+
+
+/* TODO 7 : l'encadré .astuce */
+
+
+/* TODO 8 : les liens */
+
+
+/* TODO 9 : la longueur des lignes du contenu principal */
+
+
+/* ----- Déjà fait : les images (on verra pourquoi à l'exercice 04) ----- */
+figure {
+  margin: 1rem 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le guide des épices du jardin — Ferme-école</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== EN-TÊTE : id="haut" sert de cible aux liens « Retour en haut » ===== -->
+  <header class="entete" id="haut">
+    <p class="surtitre">Jardin pédagogique de la ferme-école</p>
+    <h1>Le guide des épices du jardin</h1>
+    <p class="intro">
+      Quatre plantes faciles à cultiver, qui parfument la cuisine
+      et rendent le potager plus agréable.
+    </p>
+    <a class="bouton" href="#faq">Lire les questions fréquentes</a>
+  </header>
+
+  <!-- ===== SOMMAIRE : chaque lien vise l'id d'une carte ===== -->
+  <nav class="sommaire" aria-label="Sommaire">
+    <ul>
+      <li><a href="#gingembre">Gingembre</a></li>
+      <li><a href="#piment">Piment</a></li>
+      <li><a href="#citronnelle">Citronnelle</a></li>
+      <li><a href="#basilic">Basilic</a></li>
+      <li><a href="#faq">Questions fréquentes</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ===== LES 4 ÉPICES : une carte par plante ===== -->
+    <section class="epices">
+      <h2>Nos quatre épices</h2>
+
+      <div class="cartes">
+
+        <article class="carte" id="gingembre">
+          <!-- Le cadre sert à « couper » l'image quand elle grossit (zoom au survol) -->
+          <div class="cadre-image">
+            <img src="images/gingembre.svg" alt="Morceau de gingembre beige d'où sortent deux jeunes pousses vertes" width="400" height="300">
+          </div>
+          <h3>Gingembre</h3>
+          <p>
+            On ne sème pas de graine : on plante un morceau de gingembre qui porte des bourgeons.
+            Il aime l'ombre légère et un sol toujours un peu humide.
+          </p>
+          <ul class="fiche">
+            <li><strong>Plantation :</strong> début de la saison des pluies</li>
+            <li><strong>Récolte :</strong> 8 à 10 mois plus tard</li>
+          </ul>
+          <a class="retour" href="#haut">↑ Retour en haut</a>
+        </article>
+
+        <article class="carte" id="piment">
+          <div class="cadre-image">
+            <img src="images/piment.svg" alt="Piment rouge vif avec sa queue verte" width="400" height="300">
+          </div>
+          <h3>Piment</h3>
+          <p>
+            Il adore la chaleur et le plein soleil. Arrosez au pied, sans mouiller les feuilles :
+            un seul plant peut donner des dizaines de fruits.
+          </p>
+          <ul class="fiche">
+            <li><strong>Semis :</strong> en pépinière, repiquage après 6 semaines</li>
+            <li><strong>Récolte :</strong> environ 3 mois après le repiquage</li>
+          </ul>
+          <a class="retour" href="#haut">↑ Retour en haut</a>
+        </article>
+
+        <article class="carte" id="citronnelle">
+          <div class="cadre-image">
+            <img src="images/citronnelle.svg" alt="Touffe de citronnelle aux longues feuilles fines" width="400" height="300">
+          </div>
+          <h3>Citronnelle</h3>
+          <p>
+            Une grande herbe au parfum de citron, qui forme des touffes.
+            Pour en avoir plus, il suffit de diviser une touffe et de replanter les morceaux.
+          </p>
+          <ul class="fiche">
+            <li><strong>Plantation :</strong> toute l'année, si l'on peut arroser</li>
+            <li><strong>Récolte :</strong> coupez les tiges au fur et à mesure</li>
+          </ul>
+          <a class="retour" href="#haut">↑ Retour en haut</a>
+        </article>
+
+        <article class="carte" id="basilic">
+          <div class="cadre-image">
+            <img src="images/basilic.svg" alt="Plant de basilic aux feuilles vertes dans un pot en terre" width="400" height="300">
+          </div>
+          <h3>Basilic</h3>
+          <p>
+            Pincez régulièrement le bout des tiges : la plante reste touffue et donne plus de feuilles.
+            On aime le planter entre les pieds de tomates.
+          </p>
+          <ul class="fiche">
+            <li><strong>Semis :</strong> au début de la saison des pluies</li>
+            <li><strong>Récolte :</strong> les premières feuilles après 6 semaines</li>
+          </ul>
+          <a class="retour" href="#haut">↑ Retour en haut</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===== FAQ : <details> + <summary> = un accordéon qui s'ouvre au clic, sans JavaScript ===== -->
+    <section class="faq" id="faq">
+      <h2>Questions fréquentes</h2>
+
+      <details>
+        <summary>Peut-on cultiver ces épices en pot ?</summary>
+        <p>
+          Oui ! Le piment et le basilic poussent très bien dans un pot de 20 cm.
+          Pour la citronnelle et le gingembre, choisissez un grand pot profond.
+        </p>
+      </details>
+
+      <details>
+        <summary>Combien faut-il arroser ?</summary>
+        <p>
+          Arrosez tôt le matin ou en fin de journée, quand le dessus de la terre est sec.
+          Le gingembre demande plus d'eau que les trois autres.
+        </p>
+      </details>
+
+      <details>
+        <summary>Comment conserver les piments ?</summary>
+        <p>
+          Faites-les sécher au soleil sur une claie, à l'abri de la pluie,
+          puis gardez-les entiers ou réduits en poudre dans un bocal fermé.
+        </p>
+      </details>
+
+      <details>
+        <summary>Pourquoi mon basilic fait-il des fleurs ?</summary>
+        <p>
+          C'est normal quand il fait chaud ou que la plante vieillit.
+          Coupez les fleurs dès qu'elles apparaissent pour continuer à récolter des feuilles.
+        </p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="pied">
+    <p>Fiches rédigées par les apprenants de la ferme-école — Exercice DFS, 2026</p>
+    <p><a href="#haut">↑ Haut de page</a></p>
+  </footer>
+
+</body>
+</html>

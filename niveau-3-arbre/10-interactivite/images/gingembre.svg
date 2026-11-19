@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="rhizome" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9c78f"/>
+      <stop offset="1" stop-color="#c49a5a"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#fbf6ec"/>
+  <circle cx="200" cy="150" r="125" fill="#f1e2c3"/>
+  <g stroke="#43a047" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M168 168 C164 130 150 96 128 70"/>
+    <path d="M214 160 C214 120 222 84 240 54"/>
+  </g>
+  <path d="M128 70 C110 74 98 66 92 52 C108 50 120 56 128 70 Z" fill="#66bb6a"/>
+  <path d="M240 54 C252 40 268 38 282 44 C270 58 256 60 240 54 Z" fill="#66bb6a"/>
+  <path d="M96 196 C92 172 112 158 136 164 C146 150 168 146 182 158 C196 144 222 144 234 160 C252 148 282 154 290 176 C312 178 324 198 312 214 C302 232 276 232 262 222 C246 238 216 236 204 222 C188 236 158 236 146 222 C126 232 100 222 96 196 Z" fill="url(#rhizome)"/>
+  <g stroke="#a67c43" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.7">
+    <path d="M136 168 C140 182 140 200 134 214"/>
+    <path d="M182 160 C188 178 188 200 182 222"/>
+    <path d="M234 162 C240 180 240 202 232 220"/>
+    <path d="M276 172 C282 186 282 200 276 214"/>
+  </g>
+  <ellipse cx="160" cy="180" rx="14" ry="5" fill="#ffffff" opacity="0.3"/>
+</svg>

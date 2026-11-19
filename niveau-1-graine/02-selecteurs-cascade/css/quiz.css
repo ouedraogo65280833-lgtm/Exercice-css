@@ -1,0 +1,61 @@
+/* =====================================================
+   Qui gagne ? — 6 duels de la cascade
+   1. Lisez ce fichier et quiz.html.
+   2. Remplissez le tableau de prédictions du README.
+   3. Seulement ensuite : ouvrez quiz.html et vérifiez dans F12.
+   Ne modifiez rien avant l'étape 14 !
+   ===================================================== */
+
+body {
+  background-color: white;
+  color: black;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  font-size: 1.25rem;
+}
+
+/* ----- Duel 1 ----- */
+.graine {
+  color: blue;
+}
+
+.graine {
+  color: green;
+}
+
+/* ----- Duel 2 ----- */
+.recolte {
+  color: green;
+}
+
+h2 {
+  color: red;
+}
+
+/* ----- Duel 3 ----- */
+#arrosoir {
+  color: blue;
+}
+
+.outil {
+  color: orange;
+}
+
+/* ----- Duel 4 (regardez aussi le HTML !) ----- */
+.engrais {
+  color: green;
+}
+
+/* ----- Duel 5 ----- */
+.sol {
+  color: brown;
+  border: 3px solid brown;
+}
+
+/* ----- Duel 6 : le piège ----- */
+.machine {
+  color: red !important;
+}
+
+#tracteur {
+  color: green;
+}

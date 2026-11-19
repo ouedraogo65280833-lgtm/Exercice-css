@@ -1,0 +1,197 @@
+/* =========================================================
+   Coopérative Terre Fertile — page « Nos produits »
+   Exercice 06 : cartes et bannière avec Flexbox
+   ========================================================= */
+
+/* ===== VARIABLES : la charte graphique ===== */
+:root {
+  --vert: #2e7d32;
+  --vert-fonce: #1b5e20;
+  --vert-clair: #e8f5e9;
+  --soleil: #f9a825;
+  --soleil-clair: #ffd54f;
+  --creme: #fffaf0;
+  --blanc: #ffffff;
+  --texte: #1f2a1f;
+  --ombre: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BASE (fournie) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.5;
+  color: var(--texte);
+  background-color: var(--creme);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/* TODO 2 : des images fluides (jamais plus larges que leur conteneur,
+            proportions conservées, sans espace en dessous) */
+img {
+
+}
+
+/* Bouton (fourni) : un lien qui ressemble à un bouton */
+.bouton {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  color: var(--blanc);
+  background-color: var(--vert);
+  text-decoration: none;
+}
+
+.bouton:hover {
+  background-color: var(--vert-fonce);
+}
+
+.bouton:focus-visible {
+  outline: 3px solid var(--vert-fonce);
+  outline-offset: 2px;
+}
+
+/* Variante pour fond foncé : texte foncé sur jaune (contraste suffisant) */
+.bouton-clair {
+  color: var(--texte);
+  background-color: var(--soleil);
+}
+
+.bouton-clair:focus-visible {
+  outline-color: var(--soleil);
+}
+
+.bouton-clair:hover {
+  background-color: var(--blanc);
+}
+
+/* ===== EN-TÊTE ===== */
+.bandeau {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--blanc);
+  /* TODO 1 : rappel de l'exercice 05 — logo et nom côte à côte, centrés, espacés */
+
+}
+
+.nom-site {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--vert-fonce);
+}
+
+/* ===== BANNIÈRE ===== */
+.banniere {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+  background-image: linear-gradient(135deg, var(--vert-fonce), var(--vert));
+  /* TODO 3 : titre, texte et bouton les uns sous les autres,
+              centrés horizontalement ET verticalement dans une bannière de 22rem de haut */
+
+}
+
+.banniere h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.banniere p {
+  max-width: 35rem;
+  margin: 0 0 1.5rem;
+  font-size: 1.2rem;
+}
+
+/* ===== PRODUITS ===== */
+.produits {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.produits h2 {
+  color: var(--vert-fonce);
+  text-align: center;
+}
+
+/* TODO 4 : les cartes côte à côte, espacées de 1.5rem */
+/* TODO 5 : … et qui passent à la ligne */
+.cartes {
+
+}
+
+.carte {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background-color: var(--blanc);
+  box-shadow: var(--ombre);
+  /* TODO 5 : chaque carte part d'une largeur de 16rem, peut grandir et rétrécir */
+
+  /* TODO 6 : le contenu de la carte en colonne */
+
+}
+
+.carte img {
+  border-radius: 0.5rem;
+}
+
+.carte h3 {
+  margin: 1rem 0 0.25rem;
+  color: var(--vert-fonce);
+}
+
+.carte p {
+  margin: 0 0 1rem;
+}
+
+/* TODO 6 : le bouton de chaque carte poussé tout en bas,
+            et pas étiré sur toute la largeur */
+.carte .bouton {
+
+}
+
+/* ===== PIED DE PAGE ===== */
+.pied {
+  padding: 2rem 1.5rem 1rem;
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+}
+
+/* TODO 7 : trois colonnes qui passent à la ligne quand la place manque */
+.pied-colonnes {
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+.pied-colonnes section {
+
+}
+
+.pied h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--soleil-clair);
+}
+
+.pied a {
+  color: var(--blanc);
+}
+
+.copyright {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  font-size: 0.9rem;
+}

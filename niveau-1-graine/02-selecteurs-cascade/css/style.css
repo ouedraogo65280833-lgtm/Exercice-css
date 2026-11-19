@@ -1,0 +1,32 @@
+/* =====================================================
+   Le calendrier du potager — feuille de style
+   Les numéros des TODO correspondent aux étapes du README.
+   ===================================================== */
+
+/* ----- Déjà fait : la base de la page ----- */
+body {
+  background-color: #fffaf0;
+  color: #1f2a1f;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* TODO 4 : sélecteur de BALISE — tous les <h2> en vert #2e7d32 */
+
+
+/* TODO 5 : REGROUPEMENT — <h1> et <h2> avec la police Georgia, "Times New Roman", serif */
+
+
+/* TODO 6 : sélecteur de CLASSE — .saison (recopiez les déclarations données dans le README) */
+
+
+/* TODO 7 : DEUX CLASSES sur un même élément — .pluies (fond #e3f2fd) et .seche (fond #fff3e0) */
+
+
+/* TODO 8 : .facile en vert foncé #1b5e20 ; .difficile en rouge #b71c1c et en gras */
+
+
+/* TODO 9 : sélecteur d'IDENTIFIANT — #conseil */
+
+
+/* TODO 11 : sélecteur DESCENDANT — les <h2> qui sont DANS #conseil, en brun #6d4c41 */
+

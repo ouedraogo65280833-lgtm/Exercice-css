@@ -1,0 +1,372 @@
+/* feuille de style du site de la cooperative */
+/* modifiee par Kevin en mars, puis par Awa en mai, puis par moi */
+/* NE PAS TOUCHER : ça marche à peu près */
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  background-color: #fffaf0;
+  color: #1f2a1f;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.5;
+}
+
+/* EN TETE */
+.entete {
+  display: flexbox;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 16px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  padding-left: 24px;
+  background-color: #1b5e20;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  colr: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+/* MENU */
+#Menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+
+#menu li {
+  display: list-item;
+  float: none;
+}
+
+#menu a {
+  display: block;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  color: #ffffff;
+  text-decoration: none !important;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #a5d6a7;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+#menu a:hover {
+  background-color: #2e7d32;
+}
+
+#menu a:focus-visible {
+  background-color: #2e7d32;
+}
+
+/* ANCIEN CARROUSEL (on s'en sert encore ???) */
+#carrousel {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+  background-color: #1b5e20;
+}
+
+.carrousel-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  opacity: 0;
+}
+
+/* BANNIERE */
+.banniere {
+  text-align: center;
+  padding: 48 16px;
+  background-color: #e8f5e9;
+}
+
+.banniere h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 40px;
+  line-height: 1.2;
+  color: #1b5e20;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 12px;
+  margin-left: 0px;
+}
+
+.banniere p {
+  max-width: 600px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-left: auto;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  color: #1f2a1f;
+}
+
+/* BOUTON */
+.bouton {
+  display: inline-block;
+  background-color: #f9a825
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  color: #1f2a1f;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.bouton:hover {
+  background-color: #ffca28;
+}
+
+.bouton:focus-visible {
+  background-color: #ffca28;
+}
+
+/* PROMO NOEL 2024 */
+.promo-noel {
+  padding: 10px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* TITRES */
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 28px;
+  line-height: 1.2;
+  color: #1b5e20;
+}
+
+/* SECTIONS */
+#produits {
+  max-width: 1000px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+}
+
+.engagements {
+  max-width: 1000px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+  padding-top: 0px;
+  padding-right: 16px;
+  padding-bottom: 0px;
+  padding-left: 16px;
+}
+
+/* PRODUITS */
+.grille {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.produits {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+body main section#produits div.grille article.produit img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.produit h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #1b5e20;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.produit p {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  color: #1f2a1f;
+}
+
+.prix {
+  font-weight: bold !important;
+  color: #2e7d32 !important;
+}
+
+/* SIDEBAR (ancienne version du site) */
+.sidebar {
+  float: right;
+  width: 300px;
+  padding: 20px;
+  background-color: #e8f5e9;
+}
+
+.sidebar h3 {
+  color: #1b5e20;
+  font-size: 18px;
+}
+
+/* ENGAGEMENTS */
+.liste-engagements {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.liste-engagements li {
+  background-color: #ffffff;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  border-left-width: 6px;
+  border-left-style: solid;
+  border-left-color: #2e7d32;
+  border-radius: 0 8px 8px 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  color: #1f2a1f;
+}
+
+/* le h2 encore (ajout d'Awa) */
+h2 {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 16px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid #f9a825;
+}
+
+/* CONTACT */
+.lien-contact {
+  display: inline-block;
+  background-color: #f9a825;
+  padding-top: 12px;
+  padding-right: 24px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  color: #1f2a1f;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+.lien-contact:hover {
+  background-color: #ffca28;
+}
+
+.lien-contact:focus-visible {
+  background-color: #ffca28;
+}
+
+/* TABLEAU DES PRIX (enlevé de la page l'an dernier) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableau-prix th {
+  background-color: #2e7d32;
+  color: #ffffff;
+}
+
+.tableau-prix td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+}
+
+/* ancien style du menu, on garde au cas où
+#menu a {
+  background-color: #f9a825;
+  color: #1b5e20;
+  border-radius: 0px;
+}
+#menu a:hover {
+  background-color: #ffca28;
+}
+*/
+
+/* PIED DE PAGE */
+.pied {
+  margin-top: 48px;
+  padding-top: 24px;
+  padding-right: 16px;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  text-align: center;
+  background-color: #1b5e20;
+  color: #ffffff !important;
+}
+
+.pied p {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  color: #ffffff;
+
+.pied a {
+  color: #ffca28;
+  font-weight: bold;
+}
+
+.pied a:hover {
+  color: #ffffff;
+}

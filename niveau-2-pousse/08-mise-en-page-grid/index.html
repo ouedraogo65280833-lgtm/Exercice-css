@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le journal de la ferme-école</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!--
+    Page 100 % sémantique, SANS AUCUNE CLASSE : toute la mise en page
+    se fait avec les balises comme sélecteurs (header, nav, main, aside, footer…).
+  -->
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header>
+    <img src="images/logo.svg" alt="" width="64" height="64">
+    <div>
+      <h1>Le journal de la ferme-école</h1>
+      <p>Les nouvelles de la semaine, racontées par les apprenants de la promo 2026.</p>
+    </div>
+  </header>
+
+  <!-- ===== MENU ===== -->
+  <nav aria-label="Sommaire du journal">
+    <ul>
+      <li><a href="#mais">La récolte du maïs</a></li>
+      <li><a href="#poules">Les nouvelles poules</a></li>
+      <li><a href="#compost">L'atelier compost</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENU PRINCIPAL : les articles de la semaine ===== -->
+  <main>
+
+    <article id="mais">
+      <h2>La récolte du maïs a commencé</h2>
+      <p>Publié le <time datetime="2026-11-16">16 novembre 2026</time></p>
+      <img src="images/mais.svg" alt="Épi de maïs jaune entouré de ses feuilles vertes" width="400" height="300">
+      <p>
+        Après trois mois de culture, les épis de la parcelle nord sont enfin secs. Toute la promo
+        s'est retrouvée lundi à l'aube pour la récolte, avant les grosses chaleurs.
+      </p>
+      <p>
+        Les épis vont sécher encore deux semaines sous le hangar, puis ils seront égrenés.
+        Une partie des grains sera gardée comme semences pour la prochaine saison des pluies.
+      </p>
+    </article>
+
+    <article id="poules">
+      <h2>Bienvenue aux nouvelles poules pondeuses</h2>
+      <p>Publié le <time datetime="2026-11-13">13 novembre 2026</time></p>
+      <img src="images/poule.svg" alt="Poule rousse à crête rouge" width="400" height="300">
+      <p>
+        Dix poules ont rejoint le poulailler cette semaine. Elles ont d'abord passé trois jours
+        à l'écart des anciennes, le temps de s'habituer à leur nouvelle maison.
+      </p>
+      <p>
+        Chaque matin, une équipe de deux apprenants est chargée de l'eau, du grain et du ramassage des œufs.
+      </p>
+    </article>
+
+    <article id="compost">
+      <h2>L'atelier compost du mercredi</h2>
+      <p>Publié le <time datetime="2026-11-11">11 novembre 2026</time></p>
+      <p>
+        Mercredi, nous avons construit trois bacs à compost avec des palettes récupérées.
+        Le principe est simple : un bac se remplit, un bac « travaille », un bac est prêt à l'emploi.
+      </p>
+      <p>Ce que nous mettons dans le compost :</p>
+      <ul>
+        <li>les épluchures de la cantine ;</li>
+        <li>les feuilles mortes et la paille du poulailler ;</li>
+        <li>les tiges de maïs broyées après la récolte.</li>
+      </ul>
+    </article>
+
+  </main>
+
+  <!-- ===== ENCADRÉ : contenu complémentaire ===== -->
+  <aside id="agenda">
+    <h2>Agenda de la semaine</h2>
+    <ul>
+      <li><time datetime="2026-11-18">Mer. 18</time> — Égrenage du maïs</li>
+      <li><time datetime="2026-11-19">Jeu. 19</time> — Visite d'une école primaire</li>
+      <li><time datetime="2026-11-21">Sam. 21</time> — Marché de la ferme</li>
+    </ul>
+    <h2>Le chiffre de la semaine</h2>
+    <p><strong>214</strong> œufs ramassés en 7 jours.</p>
+  </aside>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer>
+    <p>© 2026 Ferme-école de la Digital Farming School — Exercice 08, sprint 1</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <defs>
+    <path id="feuille" d="M0 0 C18 -16 46 -16 62 0 C46 16 18 16 0 0 Z"/>
+  </defs>
+  <rect width="400" height="300" fill="#eef7ef"/>
+  <circle cx="200" cy="150" r="125" fill="#cfe8d2"/>
+  <path d="M160 250 L240 250 L230 288 L170 288 Z" fill="#a1674a"/>
+  <rect x="152" y="242" width="96" height="14" rx="4" fill="#bf8160"/>
+  <g stroke="#2e7d32" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M200 244 L200 80"/>
+    <path d="M200 200 C184 186 170 178 150 176"/>
+    <path d="M200 160 C218 146 232 140 252 138"/>
+    <path d="M200 124 C186 112 174 106 158 104"/>
+  </g>
+  <g fill="#43a047">
+    <use href="#feuille" transform="translate(150 176) rotate(200)"/>
+    <use href="#feuille" transform="translate(252 138) rotate(-20)"/>
+    <use href="#feuille" transform="translate(158 104) rotate(205)"/>
+    <use href="#feuille" transform="translate(200 214) rotate(-25)"/>
+  </g>
+  <g fill="#66bb6a">
+    <use href="#feuille" transform="translate(200 82) rotate(-120) scale(0.8)"/>
+    <use href="#feuille" transform="translate(200 82) rotate(-60) scale(0.8)"/>
+    <use href="#feuille" transform="translate(200 180) rotate(160) scale(0.9)"/>
+  </g>
+</svg>

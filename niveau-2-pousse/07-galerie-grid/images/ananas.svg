@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="450" viewBox="0 0 300 450" preserveAspectRatio="none">
+  <defs>
+    <clipPath id="fruit"><ellipse cx="150" cy="300" rx="88" ry="120"/></clipPath>
+  </defs>
+  <rect width="300" height="450" fill="#fff8e1"/>
+  <ellipse cx="150" cy="270" rx="125" ry="170" fill="#ffecb3"/>
+  <path d="M150 190 C120 140 100 90 70 60 C110 80 135 120 150 170 Z" fill="#388e3c"/>
+  <path d="M150 190 C180 140 200 90 230 60 C190 80 165 120 150 170 Z" fill="#388e3c"/>
+  <path d="M150 185 C140 130 140 70 150 25 C160 70 160 130 150 185 Z" fill="#43a047"/>
+  <path d="M150 190 C110 160 80 140 45 135 C90 125 125 150 150 180 Z" fill="#2e7d32"/>
+  <path d="M150 190 C190 160 220 140 255 135 C210 125 175 150 150 180 Z" fill="#2e7d32"/>
+  <ellipse cx="150" cy="300" rx="88" ry="120" fill="#f9a825"/>
+  <g clip-path="url(#fruit)" stroke="#e65100" stroke-width="5" opacity="0.7">
+    <path d="M20 200 L280 460 M20 260 L280 520 M20 140 L280 400 M20 80 L280 340 M20 20 L280 280"/>
+    <path d="M280 200 L20 460 M280 260 L20 520 M280 140 L20 400 M280 80 L20 340 M280 20 L20 280"/>
+  </g>
+  <ellipse cx="118" cy="260" rx="16" ry="30" fill="#ffe082" opacity="0.6"/>
+</svg>

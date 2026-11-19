@@ -1,0 +1,95 @@
+/* =========================================================
+   La ferme pédagogique — feuille de style commune aux 4 pages
+   Exercice 05 : un menu avec Flexbox
+   ========================================================= */
+
+/* ===== VARIABLES : la charte graphique ===== */
+:root {
+  --vert: #2e7d32;
+  --vert-fonce: #1b5e20;
+  --vert-clair: #e8f5e9;
+  --soleil: #f9a825;
+  --creme: #fffaf0;
+  --blanc: #ffffff;
+  --texte: #1f2a1f;
+}
+
+/* ===== BASE (déjà faite : vous n'avez rien à changer ici) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.6;
+  color: var(--texte);
+  background-color: var(--creme);
+}
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+h1,
+h2 {
+  color: var(--vert-fonce);
+  line-height: 1.2;
+}
+
+main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+}
+
+/* ===== EN-TÊTE ===== */
+.entete {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--blanc);
+  border-bottom: 4px solid var(--vert);
+  /* TODO 5 : le logo à gauche, le menu à droite, centrés verticalement */
+
+  /* TODO 8 : autoriser le passage à la ligne + un espace entre le logo et le menu */
+
+}
+
+/* TODO 4 : l'image et le nom du site côte à côte, centrés verticalement, espacés */
+.logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: var(--vert-fonce);
+  text-decoration: none;
+}
+
+/* ===== MENU ===== */
+.menu {
+  /* TODO 1 : retirer les puces, la marge et le retrait de la liste */
+
+  /* TODO 2 : placer les éléments de la liste côte à côte, avec un espace entre eux */
+
+  /* TODO 8 : autoriser le passage à la ligne */
+
+}
+
+/* TODO 3 : des liens qui ressemblent à des boutons */
+.menu a {
+
+}
+
+/* TODO 6 : survol à la souris (:hover) et focus au clavier (:focus-visible) */
+
+
+/* TODO 7 : mettre en valeur le lien de la page en cours (sélecteur d'attribut) */
+

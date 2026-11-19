@@ -1,0 +1,96 @@
+/* =========================================================
+   Le grand marché en images — galerie
+   Exercice 07 : une galerie d'images avec Grid
+   ========================================================= */
+
+/* ===== VARIABLES : la charte graphique ===== */
+:root {
+  --vert: #2e7d32;
+  --vert-fonce: #1b5e20;
+  --terre: #6d4c41;
+  --creme: #fffaf0;
+  --blanc: #ffffff;
+  --texte: #1f2a1f;
+  --ombre: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== BASE (déjà faite : vous n'avez rien à changer ici) ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  line-height: 1.5;
+  color: var(--texte);
+  background-color: var(--creme);
+}
+
+/* Images fluides (exercice 06) */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  padding: 2rem 1rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  color: var(--vert-fonce);
+}
+
+header p {
+  margin: 0;
+  color: var(--terre);
+}
+
+main {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+footer {
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--blanc);
+  background-color: var(--vert-fonce);
+}
+
+/* ===== LA GALERIE ===== */
+.galerie {
+  /* TODO 1 : une grille de 3 colonnes égales, avec un espace de 1rem entre les cases */
+
+  /* TODO 2 : remplacer les 3 colonnes fixes par « autant de colonnes de 12rem minimum que possible » */
+
+}
+
+/* TODO 5 : chaque vignette (figure) devient une petite carte */
+.galerie figure {
+
+}
+
+/* TODO 3 : toutes les images ont la même forme (4/3)… */
+/* TODO 4 : …et sont recadrées au lieu d'être déformées */
+.galerie img {
+
+}
+
+.galerie figcaption {
+  /* TODO 5 : un peu d'espace autour de la légende */
+
+}
+
+/* TODO 6 : l'image panoramique occupe toute la largeur de la grille */
+
+
+/* TODO 7 : l'image en hauteur occupe deux rangées et son image remplit toute la hauteur */
+

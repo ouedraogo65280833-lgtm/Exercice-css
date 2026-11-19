@@ -1,0 +1,69 @@
+/* =====================================================
+   Les sachets de graines — feuille de style
+   Les numéros des TODO correspondent aux étapes du README.
+   ===================================================== */
+
+/* TODO 5 : la règle box-sizing s'écrit ICI, tout en haut du fichier (étape 5) */
+
+
+/* ----- Déjà fait : la charte graphique (exercice 03) ----- */
+:root {
+  --vert: #2e7d32;
+  --vert-clair: #e8f5e9;
+  --terre: #6d4c41;
+  --soleil: #f9a825;
+  --creme: #fffaf0;
+  --texte: #1f2a1f;
+  --bordure: #e0d6cc;
+  --police-titres: Georgia, "Times New Roman", serif;
+  --police-texte: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+}
+
+body {
+  background-color: var(--creme);
+  color: var(--texte);
+  font-family: var(--police-texte);
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: var(--police-titres);
+  color: var(--vert);
+}
+
+.intro {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.prix {
+  color: var(--terre);
+  font-weight: bold;
+}
+
+/* ----- À vous : le modèle de boîte ----- */
+
+/* TODO 1 : supprimez la marge par défaut du body */
+
+
+/* TODO 2 : l'en-tête : fond vert clair, bordure basse, marges intérieures, texte centré */
+
+
+/* TODO 3 : le contenu principal : une colonne de 40rem maximum, centrée */
+
+
+/* TODO 4 : chaque .sachet devient une carte */
+
+
+/* TODO 6 : les images des sachets */
+
+
+/* TODO 7 : le badge */
+
+
+/* TODO 8 : l'ombre des cartes (ajoutez-la dans la règle .sachet) */
+
+
+/* TODO 9 : le pied de page */
+
