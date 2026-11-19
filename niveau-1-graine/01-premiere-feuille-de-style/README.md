@@ -92,7 +92,7 @@ Les numéros ci-dessous correspondent aux commentaires `TODO` des fichiers.
 
 7. Sur `index.html`, faites un clic droit sur le titre → **Inspecter** (ou `F12`).
    - Dans le panneau **Styles** (à droite ou en bas), retrouvez votre règle `h1` et le nom du fichier `style.css` avec son numéro de ligne.
-   - Décochez la case devant `color` : que se passe-t-il ? Recochez-la.
+   - Décochez la case devant `color` : que se passe-t-il ? rien ne se passe Recochez-la.
    - Cliquez sur le petit carré de couleur et choisissez une autre couleur : la page change en direct.
    - Rechargez la page (`F5`) : la couleur d'origine revient. **Les changements faits dans F12 ne sont jamais enregistrés** : c'est un terrain d'essai, la vraie modification se fait dans VS Code.
 
@@ -100,7 +100,7 @@ Les numéros ci-dessous correspondent aux commentaires `TODO` des fichiers.
    - La page perd tout son style. Ouvrez F12 → onglet **Réseau** (*Network*), puis rechargez la page (`F5`) : une ligne `styles.css` apparaît en rouge avec le code **404** (fichier introuvable).
    - Corrigez le chemin. Retenez ce réflexe : *« plus aucun style ? → onglet Réseau → 404 ? »*
 
-Pour finir, vérifiez votre feuille de style avec le [validateur CSS du W3C](https://jigsaw.w3.org/css-validator/#validate_by_input) (copiez-collez le contenu de `style.css`) : objectif **0 erreur**.
+Pour finir, vérifiez votre feuille de style avec le [ (copiez-collez le contenu de `style.css`) : objectif **0 erreur**.validateur CSS du W3C](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
 ### Mémo — Anatomie d'une règle CSS
 
@@ -119,15 +119,15 @@ h2 {                   /* sélecteur : QUELS éléments on habille           */
 
 ## Critères de réussite
 
-- [ ] Le fichier `css/style.css` existe (dossier et fichier en minuscules).
-- [ ] `index.html` et `recettes.html` contiennent `<link rel="stylesheet" href="css/style.css">` dans leur `<head>`.
-- [ ] Il ne reste aucun attribut `style` ni aucune balise `<style>` dans les pages HTML.
-- [ ] Les deux pages ont le même habillage : fond crème, titre principal vert et centré, sous-titres bruns, liens en gras.
-- [ ] Chaque règle respecte la syntaxe : sélecteur, `{`, `propriété: valeur;`, `}`.
-- [ ] La feuille de style est indentée (2 espaces) et contient au moins 3 commentaires.
-- [ ] J'ai modifié une couleur en direct dans F12 et j'ai compris que ce changement n'est pas enregistré.
-- [ ] J'ai provoqué puis corrigé l'erreur 404 de l'étape 8.
-- [ ] Le validateur CSS du W3C n'affiche aucune erreur.
+- [x] Le fichier `css/style.css` existe (dossier et fichier en minuscules).
+- [x] `index.html` et `recettes.html` contiennent `<link rel="stylesheet" href="css/style.css">` dans leur `<head>`.
+- [x] Il ne reste aucun attribut `style` ni aucune balise `<style>` dans les pages HTML.
+- [x] Les deux pages ont le même habillage : fond crème, titre principal vert et centré, sous-titres bruns, liens en gras.
+- [x] Chaque règle respecte la syntaxe : sélecteur, `{`, `propriété: valeur;`, `}`.
+- [x] La feuille de style est indentée (2 espaces) et contient au moins 3 commentaires.
+- [x] J'ai modifié une couleur en direct dans F12 et j'ai compris que ce changement n'est pas enregistré.
+- [x] J'ai provoqué puis corrigé l'erreur 404 de l'étape 8.
+- [x] Le validateur CSS du W3C n'affiche aucune erreur.
 
 ## Indices
 

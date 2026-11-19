@@ -1,0 +1,35 @@
+ /* Le fichier style.css permet de rendre notre page belle en ajoutant des couleur, des polices, un fond coloré de notre page.*/
+/* Pour la balise h1, j'applique la couleur verte au texte*/
+ h1{
+      color: green;
+    }
+/* On donne un fond coloré à notre page avec un code de couleur, ainsi que le texte et un ensemble de police adaptative en fonction du navigateur de l'utlisateur*/
+  body{
+    background-color: #fffaf0;
+    color: #1f2a1f;
+   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, sans-serif;
+  }
+/* On centre l'entete de la page*/
+  header{
+    text-align: center;
+  }
+/* Le texte de la balise h1 prend la couleur verte et une taille de police définit à 2.5rem*/
+  h1{
+    color: green;
+    font-size: 2.5rem;
+  }
+/* Le texte contenu dans h2 changer de couleur avec le code de couleur utiliser et font-family donne une police au texte.*/
+  h2{
+    color: #6d4c41;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+/* On donne une couleur au lien contenu dans la balise a et on change sa couleur*/
+  a{
+    color: #1b5e20;
+    font-weight: bold;
+  }
+/* On apporte des modifications aux contenus de la balise flooterben centrant le texte et en lui donnant une police*/
+  footer{
+    text-align: center;
+    font-size: 0.9rem;
+  }
